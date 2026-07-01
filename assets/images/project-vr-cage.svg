@@ -1,0 +1,15 @@
+<svg width="960" height="680" viewBox="0 0 960 680" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="680" fill="#EFEFED"/>
+  <rect x="76" y="76" width="808" height="528" fill="#FAFAF8" stroke="#111111" stroke-width="2"/>
+  <rect x="164" y="150" width="632" height="382" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+  <path d="M164 150L796 532M796 150L164 532" stroke="#D2D2CE" stroke-width="2"/>
+  <rect x="246" y="210" width="468" height="260" fill="none" stroke="#111111" stroke-width="3"/>
+  <path d="M324 210V470M402 210V470M480 210V470M558 210V470M636 210V470" stroke="#111111" stroke-width="2"/>
+  <path d="M246 296H714M246 384H714" stroke="#111111" stroke-width="2"/>
+  <circle cx="342" cy="342" r="34" fill="#111111"/>
+  <circle cx="552" cy="258" r="28" fill="#FFFFFF" stroke="#111111" stroke-width="3"/>
+  <circle cx="618" cy="414" r="42" fill="#E1E1DE" stroke="#111111" stroke-width="3"/>
+  <path d="M198 572H452" stroke="#111111" stroke-width="12" stroke-linecap="square"/>
+  <path d="M198 598H342" stroke="#8E8E88" stroke-width="8" stroke-linecap="square"/>
+  <text x="540" y="126" fill="#111111" font-family="Arial, sans-serif" font-size="30" font-weight="700">VR Cage Prototype</text>
+</svg>

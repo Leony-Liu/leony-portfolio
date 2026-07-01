@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="卡牌战斗与搜打撤玩法原型项目详情，展示系统策划、玩法设计与 Godot 原型开发能力。">
+  <title>卡牌战斗与搜打撤玩法原型 | LEONY Portfolio</title>
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <aside class="side-rail" aria-label="项目详情锚点导航">
+    <a class="rail-logo" href="../index.html" aria-label="返回首页">L</a>
+    <nav class="rail-dots" aria-label="项目内容分区">
+      <a class="rail-dot active" href="#overview" aria-label="项目简介"><span>Overview</span></a>
+      <a class="rail-dot" href="#features" aria-label="核心系统"><span>System</span></a>
+      <a class="rail-dot" href="#result" aria-label="项目成果"><span>Result</span></a>
+      <a class="rail-dot" href="#ability" aria-label="能力总结"><span>Ability</span></a>
+    </nav>
+    <p class="rail-meta">Project Detail</p>
+  </aside>
+
+  <header class="topbar detail-header">
+    <a class="topbar-brand" href="../index.html">LEONY</a>
+    <button class="nav-toggle" type="button" aria-label="打开导航" aria-expanded="false"><span></span><span></span></button>
+    <nav class="topnav" aria-label="项目页导航">
+      <a href="../index.html#projects">返回项目</a>
+      <a href="#overview">项目简介</a>
+      <a href="#features">核心系统</a>
+      <a href="#result">项目成果</a>
+    </nav>
+  </header>
+
+  <main class="detail-main">
+    <section class="section detail-hero">
+      <div class="container detail-hero-grid">
+        <div>
+          <a class="back-link" href="../index.html#projects">← 返回首页项目区</a>
+          <p class="eyebrow">Game Prototype</p>
+          <h1>Card Battle<br><span>Extraction Prototype</span></h1>
+          <p class="hero-desc">围绕卡牌行动、近战武器差异、房间探索、资源搜集与撤离决策构建的个人独立游戏原型。</p>
+        </div>
+        <img class="detail-cover" src="../assets/images/project-card-system.svg" alt="卡牌战斗与搜打撤玩法原型封面">
+      </div>
+    </section>
+
+    <section class="section compact-section">
+      <div class="container info-grid" aria-label="项目基本信息">
+        <div><span>项目类型</span><strong>独立游戏 Demo / 系统策划</strong></div>
+        <div><span>完成时间</span><strong>2025.12 - 2026.6</strong></div>
+        <div><span>我的角色</span><strong>系统 / 玩法策划、原型开发</strong></div>
+        <div><span>使用工具</span><strong>Godot / GDScript / Unity</strong></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container detail-layout">
+        <aside class="detail-toc" aria-label="项目内容目录">
+          <a href="#overview">项目简介</a>
+          <a href="#background">项目背景</a>
+          <a href="#responsibility">我的职责</a>
+          <a href="#features">核心系统</a>
+          <a href="#gallery">图片展示</a>
+          <a href="#video">视频展示</a>
+          <a href="#solution">问题与解决</a>
+          <a href="#result">结果与复盘</a>
+          <a href="#ability">能力总结</a>
+        </aside>
+
+        <div class="detail-content">
+          <section id="overview" class="detail-section">
+            <h2>项目简介</h2>
+            <p>该项目重点探索卡牌如何表达行动节奏、战斗策略与风险判断。玩家在房间中进行探索、遭遇敌人、使用不同武器与卡牌解决战斗，并在资源压力下做出撤离决策。</p>
+          </section>
+          <section id="background" class="detail-section">
+            <h2>项目背景</h2>
+            <p>我希望把卡牌构筑、近战战斗与搜打撤的风险管理结合起来，让“打什么、怎么打、何时撤”成为玩家持续判断的核心。项目经历了从 Unity 到 Godot 的技术路线调整。</p>
+          </section>
+          <section id="responsibility" class="detail-section">
+            <h2>我的职责</h2>
+            <ul class="check-list">
+              <li>撰写游戏设计文档与技术文档，定义战斗、卡牌、房间与撤离规则。</li>
+              <li>设计武器差异、卡牌效果、敌人类型和房间探索节奏。</li>
+              <li>在 Godot 中实现 UI、战斗流程、背包仓库、存档与基础关卡体验。</li>
+              <li>根据引擎迁移后的实现成本，调整系统拆分和任务优先级。</li>
+            </ul>
+          </section>
+          <section id="features" class="detail-section">
+            <h2>核心系统展示</h2>
+            <div class="feature-grid">
+              <article><h3>卡牌战斗</h3><p>用卡牌表达行动、攻击、移动和资源消耗，让每回合决策具有明确代价。</p></article>
+              <article><h3>武器差异</h3><p>围绕近战武器的距离、节奏和风险差异，建立不同打法的策略空间。</p></article>
+              <article><h3>房间探索</h3><p>通过基础房间类型、敌人配置和资源奖励构成可测试的流程。</p></article>
+              <article><h3>撤离与存档</h3><p>加入背包仓库、角色独立存档和撤离逻辑，形成搜集与带出目标。</p></article>
+            </div>
+          </section>
+          <section id="gallery" class="detail-section">
+            <h2>图片展示区域</h2>
+            <div class="gallery-grid">
+              <figure><img src="../assets/images/project-card-system.svg" alt="卡牌战斗系统占位图"><figcaption>卡牌战斗系统展示占位</figcaption></figure>
+              <figure><img src="../assets/images/placeholder-project.svg" alt="项目截图占位图"><figcaption>后续可替换为 Godot 实机截图</figcaption></figure>
+            </div>
+          </section>
+          <section id="video" class="detail-section">
+            <h2>视频展示区域</h2>
+            <div class="video-shell">
+              <p>后续可将实机演示视频放入 <code>assets/videos/</code>，并在此处添加 video 标签。</p>
+              <div class="video-frame"><span>Gameplay Demo Video</span></div>
+            </div>
+          </section>
+          <section id="solution" class="detail-section">
+            <h2>遇到的问题与解决方案</h2>
+            <div class="solution-grid">
+              <article><h3>玩法系统耦合度高</h3><p>将战斗、探索、存档、背包拆成独立模块，先保证核心战斗闭环可跑通。</p></article>
+              <article><h3>引擎路线调整</h3><p>从 Unity 转向 Godot 后，重新梳理节点结构、输入逻辑和 UI 状态管理。</p></article>
+            </div>
+          </section>
+          <section id="result" class="detail-section">
+            <h2>项目结果与复盘</h2>
+            <p>目前已完成完整用户界面、2 种武器、41 张卡牌、完整卡牌战斗系统、1 个可测试体验流程、自制视觉风格系统、背包仓库、角色独立存档、5 类房间与 5 种敌人。</p>
+          </section>
+          <section id="ability" class="detail-section">
+            <h2>展示出的能力总结</h2>
+            <div class="summary-grid">
+              <article><h3>系统拆解</h3><p>能把抽象玩法拆成规则、资源、敌人、房间和反馈模块。</p></article>
+              <article><h3>原型落地</h3><p>能将设计文档推进为可运行 Demo，并根据实现情况调整设计。</p></article>
+            </div>
+          </section>
+          <div class="detail-actions">
+            <a class="button button-dark" href="../index.html#projects">返回项目列表</a>
+            <a class="button button-light" href="../assets/resume/resume.pdf" download>下载简历</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>© 2026 刘弘懿 / Leony. Project detail.</p></footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

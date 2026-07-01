@@ -1,0 +1,18 @@
+<svg width="960" height="680" viewBox="0 0 960 680" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="680" fill="#EDEDEB"/>
+  <rect x="70" y="70" width="820" height="540" fill="#F9F9F7" stroke="#111111" stroke-width="2"/>
+  <path d="M70 164H890" stroke="#111111" stroke-width="2"/>
+  <circle cx="118" cy="117" r="14" fill="#111111"/>
+  <circle cx="168" cy="117" r="14" stroke="#111111" stroke-width="2"/>
+  <circle cx="218" cy="117" r="14" stroke="#111111" stroke-width="2"/>
+  <rect x="120" y="220" width="150" height="230" rx="8" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+  <rect x="304" y="220" width="150" height="230" rx="8" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+  <rect x="488" y="220" width="150" height="230" rx="8" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+  <rect x="672" y="220" width="150" height="230" rx="8" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+  <path d="M158 276H232M342 276H416M526 276H600M710 276H784" stroke="#111111" stroke-width="10" stroke-linecap="round"/>
+  <path d="M158 330H232M342 330H416M526 330H600M710 330H784" stroke="#B8B8B3" stroke-width="8" stroke-linecap="round"/>
+  <path d="M158 368H214M342 368H398M526 368H582M710 368H766" stroke="#B8B8B3" stroke-width="8" stroke-linecap="round"/>
+  <path d="M195 500V548H745V500" stroke="#111111" stroke-width="2"/>
+  <path d="M195 548H745" stroke="#111111" stroke-width="2"/>
+  <text x="120" y="548" fill="#111111" font-family="Arial, sans-serif" font-size="28" font-weight="700">Battle / Card System</text>
+</svg>

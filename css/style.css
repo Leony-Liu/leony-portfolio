@@ -8,7 +8,7 @@
   --muted-2: #a6a6a6;
   --line: #d8d8d5;
   --line-dark: #111111;
-  --rail: 76px;
+  --rail: 100px;
   --container: 1180px;
   --radius: 2px;
   --shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
@@ -86,69 +86,41 @@ p {
 }
 
 .rail-logo {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  border: 1px solid var(--ink);
-  border-radius: 0;
-  color: var(--ink);
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 1;
+  display: block;
+  width: 84px;
 }
 
 .rail-dots {
   display: grid;
-  gap: 18px;
+  gap: 40px;
+  width: 100%;
+  padding-inline: 10px;
 }
 
 .rail-dot {
-  position: relative;
   display: grid;
-  width: 24px;
-  height: 24px;
+  min-height: 24px;
   place-items: center;
-}
-
-.rail-dot::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  border: 1px solid var(--muted);
-  border-radius: 50%;
-  background: transparent;
-  transition: width var(--ease), height var(--ease), border-color var(--ease), background-color var(--ease);
-}
-
-.rail-dot.active::before,
-.rail-dot:hover::before {
-  width: 12px;
-  height: 12px;
-  border-color: var(--ink);
-  background: var(--ink);
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+  transition: color var(--ease);
 }
 
 .rail-dot span {
-  position: absolute;
-  left: 32px;
-  padding: 5px 8px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  color: var(--ink);
-  font-size: 12px;
   white-space: nowrap;
-  background: var(--surface);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
-  opacity: 0;
-  transform: translateX(-6px);
-  pointer-events: none;
-  transition: opacity var(--ease), transform var(--ease);
+  transition: transform var(--ease);
 }
 
-.rail-dot:hover span {
-  opacity: 1;
-  transform: translateX(0);
+.rail-dot.active,
+.rail-dot:hover,
+.rail-dot:focus-visible {
+  color: var(--ink);
+}
+
+.rail-dot:hover span,
+.rail-dot:focus-visible span {
+  transform: translateX(4px);
 }
 
 .rail-meta {
@@ -451,7 +423,7 @@ h3 {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 24px;
 }
 
@@ -867,10 +839,6 @@ code {
 }
 
 @media (max-width: 1080px) {
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-
   .project-card {
     grid-template-columns: minmax(210px, 0.46fr) minmax(0, 1fr);
   }

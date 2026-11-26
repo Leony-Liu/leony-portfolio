@@ -31,26 +31,38 @@ anchorLinks.forEach((link) => {
   });
 });
 
-const observedSections = Array.from(navLinks)
-  .map((link) => document.querySelector(link.getAttribute("href")))
-  .filter(Boolean);
+const navTargets = new Set(Array.from(navLinks, (link) => link.hash));
+const navSections = Array.from(document.querySelectorAll("section[id]"))
+  .filter((section) => navTargets.has(`#${section.id}`));
 
-if ("IntersectionObserver" in window && observedSections.length) {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      const visible = entries
-        .filter((entry) => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+if (navSections.length) {
+  let activeId;
 
-      if (!visible) return;
+  function updateActiveSection() {
+    const scroller = document.scrollingElement;
+    const atBottom = scroller.scrollTop > 0 &&
+      scroller.scrollHeight - scroller.clientHeight - scroller.scrollTop <= 1;
+    const currentSection = atBottom ? navSections.at(-1) : navSections.findLast((section) => {
+      const scrollMargin = parseFloat(getComputedStyle(section).scrollMarginTop);
+      return section.getBoundingClientRect().top <= scrollMargin + 1;
+    }) || navSections[0];
+    const id = `#${currentSection.id}`;
 
-      const id = `#${visible.target.id}`;
-      navLinks.forEach((link) => {
-        link.classList.toggle("active", link.getAttribute("href") === id);
-      });
-    },
-    { rootMargin: "-32% 0px -52% 0px", threshold: [0.1, 0.35, 0.6] }
-  );
+    if (id === activeId) return;
+    activeId = id;
+    navLinks.forEach((link) => {
+      const isActive = link.hash === id;
+      link.classList.toggle("active", isActive);
+      if (isActive) {
+        link.setAttribute("aria-current", "location");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+  }
 
-  [...new Set(observedSections)].forEach((section) => observer.observe(section));
+  window.addEventListener("scroll", updateActiveSection, { passive: true });
+  window.addEventListener("resize", updateActiveSection);
+  window.addEventListener("pageshow", updateActiveSection);
+  updateActiveSection();
 }

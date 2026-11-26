@@ -249,7 +249,7 @@ main,
 h1 {
   max-width: 840px;
   margin-bottom: 18px;
-  font-size: clamp(64px, 12vw, 148px);
+  font-size: clamp(64px, 12vw, 200px);
   font-weight: 500;
   line-height: 0.88;
   letter-spacing: 0;
@@ -284,11 +284,7 @@ h3 {
   font-weight: 600;
 }
 
-.hero-desc {
-  max-width: 690px;
-  margin-bottom: 34px;
-  font-size: 17px;
-}
+
 
 .hero-actions {
   display: flex;
@@ -852,6 +848,14 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+}
+.back-link {
+  display: inline-flex;
+  margin-bottom: 36px;
+  color: var(--muted);
+  font-weight: 700;
+  transition: color var(--ease);
+  font-size: 36px;
 }
 
 code {
